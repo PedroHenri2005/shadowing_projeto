@@ -114,7 +114,7 @@ async def obter_legenda(url: str):
                 "duracao": bloco.duration 
             })
 
-        # Para finalizar, retorno o ID do vídeo em questão, o idioma da legenda, e a lista de blocos de legenda formatados:   
+        # Para finalizar, retorno a lista de blocos de legenda formatados:   
         return legendas_formatadas
 
     except Exception as e:
