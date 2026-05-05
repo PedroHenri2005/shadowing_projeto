@@ -126,3 +126,12 @@ async def obter_legenda(url: str):
         # Se outro tipo de erro ocorrer, ele cai nessa categoria:
         print(f"Erro técnico: {e}")
         raise HTTPException(status_code=500, detail="Erro ao processar legendas.")
+
+# Para utilizar o código:
+
+# 1 - Recomendo usar um ambiente virtual (venv) para ficar mais fácil. Dentro dele, instale todo o necessário para rodar esse arquivo:
+# pip install "fastapi[standard]" youtube-transcript-api requests
+# 2 - Depois, basta criar o arquivo legendas.py no mesmo diretório e executar:
+# fastapi dev legendas.py
+# Com esse comando funcionando, o link com o docs ficará disponível. Basta testar o GET /api/legenda colando a URL de um vídeo.
+
